@@ -430,20 +430,6 @@
           "_anchor": "image1-2v"
         },
         {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<div style=\"text-align: center;\"><a href=\"https://player.vimeo.com/video/364186432\"></a><img src=\"https://eskulle.github.io/assets/images/button-watch-free-training-now-569x80.png\" alt=\"\" width=\"569\" height=\"80\"></div>",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 0px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-2y",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
-        },
-        {
           "alias": false,
           "_styles": {
             ".dropdown-item:before": {

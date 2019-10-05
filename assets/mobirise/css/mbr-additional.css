@@ -902,18 +902,6 @@ section.lazy-placeholder:after {
     padding: 0 1rem;
   }
 }
-#custom-html-2y {
-  /* Type valid CSS here */
-}
-#custom-html-2y div {
-  padding: 0px 0;
-  color: #777;
-  text-align: center;
-}
-#custom-html-2y p {
-  font-size: 60px;
-  color: #777;
-}
 .cid-rAEK7MbOg6 .dropdown-item:before {
   font-family: MobiriseIcons !important;
   content: '\e966';
