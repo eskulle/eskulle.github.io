@@ -15,7 +15,7 @@
         "mainFont": "Poppins",
         "display1Font": "Oswald",
         "display1Size": "2.6",
-        "display2Font": "Roboto",
+        "display2Font": "Roboto Condensed",
         "display2Size": "2",
         "display5Font": "Roboto",
         "display5Size": "1.4",
@@ -50,6 +50,11 @@
         "css": "'Roboto', sans-serif",
         "name": "Roboto",
         "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+      },
+      {
+        "css": "'Roboto Condensed', sans-serif",
+        "name": "Roboto Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i"
       }
     ],
     "uniqCompNum": 118,
