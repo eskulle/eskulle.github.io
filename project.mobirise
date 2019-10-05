@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "IM Mastery",
-    "currentPage": "index.html",
+    "currentPage": "page1.html",
     "theme": {
       "name": "commercem4",
       "title": "CommerceM4",
@@ -17,7 +17,7 @@
         "display1Size": "3",
         "display2Font": "Poppins",
         "display2Size": "2",
-        "display5Font": "Poppins",
+        "display5Font": "Roboto",
         "display5Size": "1.4",
         "display7Font": "Rubik",
         "display7Size": 1,
@@ -29,13 +29,13 @@
         "isScrollToTopButton": false
       },
       "additionalSetColors": [
+        "#ffdc00",
         "#8ac0ff",
         "#ffe600",
         "#32f3fc",
         "#5cc1ff",
         "#a5e10b",
-        "#fffd8f",
-        "#1481ff"
+        "#fffd8f"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -45,9 +45,14 @@
         "css": "'Oswald', sans-serif",
         "name": "Oswald",
         "url": "https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700"
+      },
+      {
+        "css": "'Roboto', sans-serif",
+        "name": "Roboto",
+        "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
       }
     ],
-    "uniqCompNum": 115,
+    "uniqCompNum": 116,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png",
     "favicon": "",
@@ -862,8 +867,8 @@
     },
     "page1.html": {
       "settings": {
-        "title": "Page 1",
-        "meta_descr": "Earn While You Learn ~ 5 Easy Steps! All on your cellphone without recruiting or selling...",
+        "title": "Guaranteed $250K Monthly",
+        "meta_descr": "This is One Of Those Rare Opportunities and Timing That You Don't Want To Miss.. All On Your Cell Phone!",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
@@ -879,54 +884,34 @@
               "padding-bottom": "(@paddingBottom * 15px)"
             },
             "& when (@bg-type = 'color')": {
-              "background": "linear-gradient(to right, @bgColor2 0%, @bgColor2 30%, @bg-value 30%, @bg-value 100%)"
+              "background-color": "@bg-value"
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
+            ".container-fluid": {
+              "padding": "0 3rem"
+            },
             ".animated-element": {
               "color": "@textColor"
             },
-            ".img-block": {
-              "-webkit-align-self": "center",
-              "align-self": "center"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#9c88bc"
-            },
-            "@media (min-width: 992px)": {
-              ".img-block": {
-                "padding-right": "2rem"
-              }
-            },
             "@media (max-width: 767px)": {
-              ".mbr-figure": {
-                "margin-top": "1rem"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".img-block": {
-                "padding-bottom": "2rem"
-              },
-              "& when (@bg-type = 'color')": {
-                "background": "@bg-value"
+              ".container-fluid": {
+                "padding": "0 1rem"
               }
             },
             ".mbr-section-title": {
-              "color": "#232323"
-            },
-            ".mbr-text,.mbr-section-btn": {
-              "color": "#4e84c2"
+              "color": "#ffdc00"
             }
           },
-          "_name": "header8",
-          "_customHTML": "<section class=\"header8\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\" plugins=\"mbr-animated-bg-text\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Animated Text\" name=\"showAnimatedText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/wall-1920x1080-1-1920x1080.png\" title=\"Background Image\" parallax selected>\n            <input type=\"color\" value=\"#66458e\" title=\"Background Color\">\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" title=\"Background Video\">\n        </fieldset>\n        <input type=\"color\" title=\"Color 2\" name=\"bgColor2\" value=\"#ec6963\" condition=\"bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#bbbbbb\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n        <header codition=\"showSubtitle && showAnimatedText\">Animated Background Text</header>\n        <select title=\"Text Title\" name=\"textTitle\" condition=\"showAnimatedText\">\n            <option value=\"title1\">Title 1</option>\n            <option value=\"title2\">Title 2</option>\n            <option value=\"title3\">Title 3</option>\n            <option value=\"text\" selected>Text</option>\n            <option value=\"menu\">Menu</option>\n        </select>\n        <input type=\"color\" title=\"Text Color\" name=\"textColor\" value=\"#efefef\" condition=\"showAnimatedText\">\n        <input type=\"range\" inline title=\"Text Size\" name=\"textSize\" min=\"1\" max=\"20\" value=\"10\" step=\"1\" condition=\"showAnimatedText\">\n        <input type=\"range\" inline title=\"Text Opacity\" name=\"textOpacity\" min=\"0\" max=\"1\" value=\"0.2\" step=\"0.1\" condition=\"showAnimatedText\">\n        <input type=\"range\" inline title=\"Speed\" name=\"textSpeed\" min=\"50\" max=\"100\" value=\"60\" step=\"1\" condition=\"showAnimatedText\">\n        <input type=\"text\" title=\"Text\" inline name=\"animatedText\" value=\"Present Your Store\" condition=\"showAnimatedText\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity,'background-color':overlayColor}\">\n    </div>\n\n    <div class=\"animated-text-background\" mbr-class=\"{'display-1': textTitle=='title1',\n                     'display-2': textTitle=='title2',\n                     'display-5': textTitle=='title3',\n                     'display-7': textTitle=='text',\n                     'display-4': textTitle=='menu'}\" mbr-style=\"{'color':textColor,\n                     'opacity': textOpacity,\n                     'font-size':textSize+'rem'}\" mbr-if=\"showAnimatedText\">\n        <span class=\"animated-element\" data-word=\"{{animatedText}}\" data-speed=\"{{textSpeed}}\">\n        </span>\n    </div>\n    <div class=\"container\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-md-6 align-left img-block\">\n                <div class=\"mbr-figure\">\n                    <img src=\"@PROJECT_PATH@/assets/images/trade-station-669x674.png\" alt=\"Mobirise\" title>\n                </div>\n            </div>\n            <div class=\"mbr-white col-md-6\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style align-left pb-2\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\"><b>LOREM ISPUM</b> DOLOR SIT AMET CONSECTETUR</h4>\n                <h1 class=\"mbr-section-title mbr-white mbr-bold mbr-fonts-style align-left\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Earn While You Learn..<br>5 Easy Steps!</h1>\n                <p class=\"mbr-text pb-3 mbr-fonts-style mbr-white align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showText\" data-app-selector=\".mbr-text,.mbr-section-btn\">All On Your Cellphone Without Recruiting Or Selling...<br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" mbr-class=\"{'pt-3': !showText}\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\" class=\"mbr-section-btn\"><a class=\"btn btn-lg btn-warning\" type=\"submit\" data-app-placeholder=\"Type Text\" href=\"page1.html\">Become a Credit Parnter</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
-          "_cid": "rE3977eWiU",
+          "_name": "header9",
+          "_customHTML": "<section class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\" plugins=\"mbr-animated-bg-text\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Animated Text\" name=\"showAnimatedText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/wall-1920x1080-9-1920x1080.png\" title=\"Background Image\" selected parallax>\n            <input type=\"color\" value=\"#096693\" title=\"Background Color\">\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" title=\"Background Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#aaaba6\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n        <header codition=\"showSubtitle && showAnimatedText\">Animated Background Text</header>\n        <select title=\"Text Title\" name=\"textTitle\" condition=\"showSubtitle && showAnimatedText\">\n            <option value=\"title1\" selected>Title 1</option>\n            <option value=\"title2\">Title 2</option>\n            <option value=\"title3\">Title 3</option>\n            <option value=\"text\">Text</option>\n            <option value=\"menu\">Menu</option>\n        </select>\n        <input type=\"color\" title=\"Text Color\" name=\"textColor\" value=\"#efefef\" condition=\"showSubtitle && showAnimatedText\">\n        <input type=\"range\" inline title=\"Text Size\" name=\"textSize\" min=\"1\" max=\"20\" value=\"20\" step=\"1\" condition=\"showSubtitle && showAnimatedText\">\n        <input type=\"range\" inline title=\"Text Opacity\" name=\"textOpacity\" min=\"0\" max=\"1\" value=\"0.1\" step=\"0.1\" condition=\"showSubtitle && showAnimatedText\">\n        <input type=\"range\" inline title=\"Speed\" name=\"textSpeed\" min=\"50\" max=\"100\" value=\"60\" step=\"1\" condition=\"showSubtitle && showAnimatedText\">\n        <input type=\"text\" title=\"Text\" inline name=\"animatedText\" value=\"Present Your Product\" condition=\"showSubtitle && showAnimatedText\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"animated-text-background\" mbr-class=\"{'display-1': textTitle=='title1',\n                     'display-2': textTitle=='title2',\n                     'display-5': textTitle=='title3',\n                     'display-7': textTitle=='text',\n                     'display-4': textTitle=='menu'}\" mbr-style=\"{'color':textColor,\n                     'opacity': textOpacity,\n                     'font-size':textSize+'rem'}\" mbr-if=\"showAnimatedText\">\n        <span class=\"animated-element\" data-word=\"{{animatedText}}\" data-speed=\"{{textSpeed}}\">\n        </span>\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-10 col-lg-8 align-center mbr-white\">\n                <h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">Present Your Product</h4>\n                <h1 class=\"mbr-section-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Guaranteed $250,000 A Month!</h1>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In The 5.3 Trillion $$ Daily Market All On Your Cell Phone<br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" mbr-class=\"{'pt-3': !showSubtitle}\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\" class=\"mbr-section-btn\"><a class=\"btn-secondary btn btn-lg\" type=\"submit\">Start Shopping</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "rE3kDA9xNx",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "header8-2z"
+          "_anchor": "header9-37"
         },
         {
           "_name": "content05",
@@ -1110,6 +1095,64 @@
           "_once": false,
           "_params": {},
           "_anchor": "video02-31"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "overflow": "hidden !important",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background": "linear-gradient(to right, @bgColor2 0%, @bgColor2 30%, @bg-value 30%, @bg-value 100%)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".animated-element": {
+              "color": "@textColor"
+            },
+            ".img-block": {
+              "-webkit-align-self": "center",
+              "align-self": "center"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#9c88bc"
+            },
+            "@media (min-width: 992px)": {
+              ".img-block": {
+                "padding-right": "2rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-figure": {
+                "margin-top": "1rem"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".img-block": {
+                "padding-bottom": "2rem"
+              },
+              "& when (@bg-type = 'color')": {
+                "background": "@bg-value"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#232323"
+            },
+            ".mbr-text,.mbr-section-btn": {
+              "color": "#4e84c2"
+            }
+          },
+          "_name": "header8",
+          "_customHTML": "<section class=\"header8\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\" plugins=\"mbr-animated-bg-text\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Animated Text\" name=\"showAnimatedText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/wall-1920x1080-3-1920x1080.png\" title=\"Background Image\" parallax selected>\n            <input type=\"color\" value=\"#66458e\" title=\"Background Color\">\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" title=\"Background Video\">\n        </fieldset>\n        <input type=\"color\" title=\"Color 2\" name=\"bgColor2\" value=\"#ec6963\" condition=\"bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#bbbbbb\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n        <header codition=\"showSubtitle && showAnimatedText\">Animated Background Text</header>\n        <select title=\"Text Title\" name=\"textTitle\" condition=\"showAnimatedText\">\n            <option value=\"title1\">Title 1</option>\n            <option value=\"title2\">Title 2</option>\n            <option value=\"title3\">Title 3</option>\n            <option value=\"text\" selected>Text</option>\n            <option value=\"menu\">Menu</option>\n        </select>\n        <input type=\"color\" title=\"Text Color\" name=\"textColor\" value=\"#efefef\" condition=\"showAnimatedText\">\n        <input type=\"range\" inline title=\"Text Size\" name=\"textSize\" min=\"1\" max=\"20\" value=\"10\" step=\"1\" condition=\"showAnimatedText\">\n        <input type=\"range\" inline title=\"Text Opacity\" name=\"textOpacity\" min=\"0\" max=\"1\" value=\"0.2\" step=\"0.1\" condition=\"showAnimatedText\">\n        <input type=\"range\" inline title=\"Speed\" name=\"textSpeed\" min=\"50\" max=\"100\" value=\"60\" step=\"1\" condition=\"showAnimatedText\">\n        <input type=\"text\" title=\"Text\" inline name=\"animatedText\" value=\"Present Your Store\" condition=\"showAnimatedText\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity,'background-color':overlayColor}\">\n    </div>\n\n    <div class=\"animated-text-background\" mbr-class=\"{'display-1': textTitle=='title1',\n                     'display-2': textTitle=='title2',\n                     'display-5': textTitle=='title3',\n                     'display-7': textTitle=='text',\n                     'display-4': textTitle=='menu'}\" mbr-style=\"{'color':textColor,\n                     'opacity': textOpacity,\n                     'font-size':textSize+'rem'}\" mbr-if=\"showAnimatedText\">\n        <span class=\"animated-element\" data-word=\"{{animatedText}}\" data-speed=\"{{textSpeed}}\">\n        </span>\n    </div>\n    <div class=\"container\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-md-6 align-left img-block\">\n                <div class=\"mbr-figure\">\n                    <img src=\"@PROJECT_PATH@/assets/images/trade-station-669x674.png\" alt=\"Mobirise\" title>\n                </div>\n            </div>\n            <div class=\"mbr-white col-md-6\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style align-left pb-2\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\"><b>LOREM ISPUM</b> DOLOR SIT AMET CONSECTETUR</h4>\n                <h1 class=\"mbr-section-title mbr-white mbr-bold mbr-fonts-style align-left\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Earn While You Learn..<br>5 Easy Steps!</h1>\n                <p class=\"mbr-text pb-3 mbr-fonts-style mbr-white align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showText\" data-app-selector=\".mbr-text,.mbr-section-btn\">All On Your Cellphone Without Recruiting Or Selling...<br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" mbr-class=\"{'pt-3': !showText}\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\" class=\"mbr-section-btn\"><a class=\"btn btn-lg btn-warning\" type=\"submit\" data-app-placeholder=\"Type Text\" href=\"page1.html\">Become a Credit Parnter</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "rE3977eWiU",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header8-2z"
         },
         {
           "alias": false,
