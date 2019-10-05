@@ -1281,7 +1281,9 @@ section.lazy-placeholder:after {
 }
 .cid-rE3kDA9xNx {
   overflow: hidden !important;
-  background-image: url("../../../assets/images/wall-1920x1080-6-1920x1080.png");
+  padding-top: 90px;
+  padding-bottom: 120px;
+  background-image: url("../../../assets/images/wall-1920x1080-9-1920x1080.png");
 }
 .cid-rE3kDA9xNx .container-fluid {
   padding: 0 3rem;
@@ -1296,6 +1298,17 @@ section.lazy-placeholder:after {
 }
 .cid-rE3kDA9xNx .mbr-section-title {
   color: #ffdc00;
+}
+.cid-rE4la5uI7u {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+}
+.cid-rE4la5uI7u .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-rE4la5uI7u .mbr-section-title {
+  color: #000000;
 }
 .cid-rE397aeTsV {
   padding-top: 0px;
