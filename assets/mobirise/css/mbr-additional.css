@@ -902,6 +902,18 @@ section.lazy-placeholder:after {
     padding: 0 1rem;
   }
 }
+#custom-html-2y {
+  /* Type valid CSS here */
+}
+#custom-html-2y div {
+  padding: 0px 0;
+  color: #777;
+  text-align: center;
+}
+#custom-html-2y p {
+  font-size: 60px;
+  color: #777;
+}
 .cid-rAEK7MbOg6 .dropdown-item:before {
   font-family: MobiriseIcons !important;
   content: '\e966';
@@ -1266,14 +1278,12 @@ section.lazy-placeholder:after {
     left: -1rem;
   }
 }
-.cid-rE31nN4K4f {
-  padding-top: 30px;
+.cid-rE35yxkHFW {
+  padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
-.cid-rE31nN4K4f .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rE31nN4K4f .mbr-section-title {
-  color: #5b686b;
+.cid-rE35yxkHFW .media-container-row {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
