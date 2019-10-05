@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "IM Mastery",
-    "currentPage": "page1.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "commercem4",
       "title": "CommerceM4",
@@ -29,13 +29,13 @@
         "isScrollToTopButton": false
       },
       "additionalSetColors": [
+        "#8ac0ff",
         "#ffe600",
         "#32f3fc",
         "#5cc1ff",
         "#a5e10b",
         "#fffd8f",
-        "#1481ff",
-        "#00a82d"
+        "#1481ff"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -334,7 +334,7 @@
             },
             ".mbr-section-subtitle": {
               "text-align": "center",
-              "color": "#ec6963"
+              "color": "#8ac0ff"
             },
             ".mbr-section-title": {
               "text-align": "center",
@@ -846,7 +846,7 @@
               "flex-wrap": "wrap"
             },
             ".media-container-row .mbr-text": {
-              "color": "#465052"
+              "color": "#5b686b"
             }
           },
           "_name": "footer1",
@@ -1647,7 +1647,7 @@
               "flex-wrap": "wrap"
             },
             ".media-container-row .mbr-text": {
-              "color": "#465052"
+              "color": "#5b686b"
             }
           },
           "_name": "footer1",
